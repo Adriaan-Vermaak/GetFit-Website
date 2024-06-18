@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Styles for the welcome message */
+        .welcome-message {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            color: #333;
+            width: 100%;
+        }
+
+        /* Styles for the features overview section */
+        .features-overview {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        /* Styles for the link blocks section */
+        .link-blocks {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        /* Styles for individual link blocks */
+        .link-block {
+            background-color: #32CD32;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            cursor: pointer;
+            width: 200px; /* Fixed width for uniform button size */
+            height: 50px; /* Fixed height for uniform button size */
+            margin-bottom: 10px;
+        }
+
+        .link-block:hover {
+            background-color: #28a428;
+        }
+    </style>
+</head>
+<body>
+    <div class="welcome-message">
+        <h1>Welcome to your Dashboard, <span id="username">User</span>!</h1>
+
+        <h2>Explore Getfit, where your fitness journey begins and thrives.</h2>
+    </div>
+
+    <div class="features-overview">
+        <h2>Features Overview:</h2>
+        <ul>
+            <li><strong>Browse Gear:</strong> Discover a wide range of outdoor equipment including apparel, accessories, and more.</li>
+            <li><strong>View Cart:</strong> Manage items you've added to your cart and proceed with purchases seamlessly.</li>
+            <li><strong>Sample Workouts:</strong> Explore our variety of workout plans tailored to different fitness levels and schedules, including 3-day, 4-day, and 5-day routines.</li>
+            <li><strong>Recovery Techniques:</strong> Learn essential techniques to enhance your post-workout recovery, including stretching, foam rolling, hydration, sleep tips, and more.</li>
+        </ul>
+    </div>
+
+    <div class="link-blocks">
+        <a href="browsegear.html?username=User" class="link-block">Browse Gear</a>
+        <a href="cart.html?username=User" class="link-block">View Cart</a>
+        <a href="sampleworkouts.html?username=User" class="link-block">Sample Workouts</a>
+        <a href="recoverytechniques.html?username=User" class="link-block">Recovery Techniques</a>
+    </div>
+
+    <footer>
+        Getfit 2024 &copy; All rights reserved.
+    </footer>
+    
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const username = urlParams.get('username') || 'User'; // Default to 'User' if username parameter is not provided
+        document.getElementById('username').textContent = username;
+    </script>
+</body>
+</html>

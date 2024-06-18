@@ -1,0 +1,331 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.link-block-container-wrapper {
+    display: flex;
+    justify-content: center; /* Center the container horizontally */
+    align-items: center; /* Center the container vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+.link-block-container {
+    display: flex;
+    justify-content: center; /* Center the blocks horizontally */
+    flex-wrap: wrap; /* Allow wrapping if there are multiple blocks */
+}
+
+.link-block {
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    width: 200px;
+    height: 150px;
+    background-color: #28a745; /* Bright green color */
+    color: #fff; /* White text color */
+    margin: 20px;
+    text-align: center;
+    line-height: 1.5;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.link-block:hover {
+    background-color: #218838; /* Darker green for hover effect */
+}
+
+.content {
+    padding: 20px;
+}
+
+.form {
+    margin-bottom: 20px;
+}
+
+.form h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #32CD32; /* Bright green color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #218838; /* Darker green for hover effect */
+}
+
+p {
+    text-align: center;
+}
+
+/* Center the products on the browsegear page */
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the products horizontally */
+}
+
+.product-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+    width: calc(33.333% - 40px); /* Three products per row */
+}
+
+.add-to-cart-button {
+    background-color: #28a745; /* Bright green color for Add to Cart buttons */
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.add-to-cart-button:hover {
+    background-color: #218838; /* Darker green for hover effect */
+}
+
+footer {
+    width: 100%;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+/* CSS specific to cart page */
+#cart-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#cart-container .product-item {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+#cart-container #total-cost {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#cart-container .purchase-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+#cart-container .purchase-button:hover {
+    background-color: #0056b3;
+}
+
+#cart-container .purchase-button {
+    display: inline-block; /* Display as inline block */
+    width: auto; /* Automatically adjust width based on content */
+    max-width: 200px; /* Optional: Set maximum width */
+    padding: 10px;
+    background-color: #007bff;
+    color: #000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+    text-align: center; /* Center text */
+}
+
+#cart-container .purchase-button:hover {
+    background-color: #0056b3;
+}
+
+.Workout-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center align content */
+}
+
+.Workout-container h1 {
+    margin-bottom: 20px;
+}
+
+.Workout-container h2 {
+    margin-top: 30px; /* Add margin top to separate workout plans */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 20px;
+    text-align: left; /* Align list items to the left */
+}
+
+ul li strong {
+    display: block;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+ul li ul {
+    margin-top: 10px;
+    margin-left: 20px; /* Indent nested lists */
+}
+
+
+.recovery-techniques {
+    max-width: 800px;
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.recovery-techniques section {
+    margin-bottom: 30px; /* Space between sections */
+    padding: 20px;
+    border: 1px solid #ccc; /* Border for each section */
+    border-radius: 5px;
+}
+
+.recovery-techniques h2 {
+    color: #28a745; /* Header color */
+    margin-bottom: 10px;
+}
+
+.recovery-techniques p {
+    line-height: 1.6;
+}
+
+/* Container for the purchase form */
+.purchase-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styles */
+h1, h2 {
+    text-align: center;
+    color: #333;
+}
+
+/* Styles for the form group */
+.form-group {
+    margin-bottom: 15px;
+}
+
+/* Label styles */
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+/* Input and select styles */
+input[type="text"],
+input[type="month"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Styles for the total cost display */
+#total-cost {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #32CD32;
+}
+
+/* Purchase button styles */
+#purchase-button {
+    background-color: #32CD32;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    padding: 15px;
+    font-size: 1.1em;
+    margin-top: 20px;
+}
+
+#purchase-button:hover {
+    background-color: #28a428;
+}
